@@ -1,0 +1,13 @@
+# Task 10: Delete Book Review (deletereview)
+
+## Command:
+curl -s -w "\nHTTP_STATUS: %{http_code}\n" -b cookies.txt -X DELETE http://localhost:5000/customer/auth/review/1
+
+## HTTP Status Code:
+200
+
+## Response:
+{"message":"Review for ISBN 1 posted by the user student_reviewer_01 deleted."}
+
+## Verification (GET /review/1 after deletion):
+{}

@@ -1,0 +1,14 @@
+# Task 3: Search Books by ISBN (getbooksbyISBN)
+
+## Command:
+curl -s -w "\nHTTP_STATUS: %{http_code}\n" http://localhost:5000/isbn/1
+
+## HTTP Status Code:
+200
+
+## Response:
+{
+    "author": "Chinua Achebe",
+    "title": "Things Fall Apart",
+    "reviews": {}
+}

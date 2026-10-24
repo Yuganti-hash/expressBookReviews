@@ -1,0 +1,10 @@
+# Task 7: Register a New User (register)
+
+## Command:
+curl -s -w "\nHTTP_STATUS: %{http_code}\n" -X POST -H "Content-Type: application/json" -d '{"username":"student_reviewer_01","password":"ReviewerPassword2026!"}' http://localhost:5000/register
+
+## HTTP Status Code:
+200
+
+## Response:
+{"message":"User successfully registered. Now you can login"}

@@ -1,0 +1,15 @@
+# Task 9: Add / Modify Book Review (reviewadded)
+
+## Command:
+curl -s -w "\nHTTP_STATUS: %{http_code}\n" -b cookies.txt -X PUT "http://localhost:5000/customer/auth/review/1?review=An%20insightful%20and%20profound%20exploration%20of%20Igbo%20traditions%20and%20colonialism."
+
+## HTTP Status Code:
+200
+
+## Response:
+{"message":"The review for the book with ISBN 1 has been added/updated","reviews":{"student_reviewer_01":"An insightful and profound exploration of Igbo traditions and colonialism."}}
+
+## Verification (GET /review/1):
+{
+    "student_reviewer_01": "An insightful and profound exploration of Igbo traditions and colonialism."
+}

@@ -1,0 +1,16 @@
+# Task 5: Search Books by Title (getbooksbytitle)
+
+## Command:
+curl -s -w "\nHTTP_STATUS: %{http_code}\n" "http://localhost:5000/title/Pride%20and%20Prejudice"
+
+## HTTP Status Code:
+200
+
+## Response:
+{
+    "8": {
+        "author": "Jane Austen",
+        "title": "Pride and Prejudice",
+        "reviews": {}
+    }
+}
